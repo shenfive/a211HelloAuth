@@ -12,15 +12,41 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        
+        //監聽登入狀態
+        Auth.auth().addStateDidChangeListener { (auth, user) in
+            if let user = user{
+                //登入成功時執行的項目
+                print("MSG: 登入狀態 ")
+            }else{
+                //登出時執行的項目
+                print("MSG: 未登入狀態 ")
+            }
+            
+        }
+
+        
+    }
+
+    @IBAction func login(_ sender: Any) {
         Auth.auth().signInAnonymously { (user, error) in
             if error != nil {
-                print(error?.localizedDescription)
+                print("MSG:" + error!.localizedDescription)
             }else{
-                print(user.debugDescription)
+                print("MSG:" + user.debugDescription)
             }
         }
     }
-
-
+    
+    @IBAction func logout(_ sender: Any) {
+        
+        do {
+            try Auth.auth().signOut()
+        } catch  {
+            print("MSG 登出失敗")
+        }
+        
+    }
 }
 
