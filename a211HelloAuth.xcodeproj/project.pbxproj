@@ -13,9 +13,12 @@
 		3BB81D73258D93670019F1A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BB81D71258D93670019F1A2 /* Main.storyboard */; };
 		3BB81D75258D936A0019F1A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BB81D74258D936A0019F1A2 /* Assets.xcassets */; };
 		3BB81D78258D936A0019F1A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BB81D76258D936A0019F1A2 /* LaunchScreen.storyboard */; };
+		3BB81D81258D94430019F1A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BB81D80258D94430019F1A2 /* GoogleService-Info.plist */; };
+		F86414C45FE7DA1127A064BF /* Pods_a211HelloAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0263C32763454FD23F8E4DBF /* Pods_a211HelloAuth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0263C32763454FD23F8E4DBF /* Pods_a211HelloAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_a211HelloAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BB81D68258D93670019F1A2 /* a211HelloAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = a211HelloAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BB81D6B258D93670019F1A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BB81D6D258D93670019F1A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		3BB81D74258D936A0019F1A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BB81D77258D936A0019F1A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BB81D79258D936A0019F1A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BB81D80258D94430019F1A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3F6604F9C7BD07CAFC8C92F6 /* Pods-a211HelloAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-a211HelloAuth.release.xcconfig"; path = "Target Support Files/Pods-a211HelloAuth/Pods-a211HelloAuth.release.xcconfig"; sourceTree = "<group>"; };
+		635944ACAD6ACCCEB68BA5AA /* Pods-a211HelloAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-a211HelloAuth.debug.xcconfig"; path = "Target Support Files/Pods-a211HelloAuth/Pods-a211HelloAuth.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F86414C45FE7DA1127A064BF /* Pods_a211HelloAuth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +47,11 @@
 		3BB81D5F258D93670019F1A2 = {
 			isa = PBXGroup;
 			children = (
+				3BB81D80258D94430019F1A2 /* GoogleService-Info.plist */,
 				3BB81D6A258D93670019F1A2 /* a211HelloAuth */,
 				3BB81D69258D93670019F1A2 /* Products */,
+				71BB39B252B2BD65A628C529 /* Pods */,
+				4667A083285B30503F11D344 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +77,24 @@
 			path = a211HelloAuth;
 			sourceTree = "<group>";
 		};
+		4667A083285B30503F11D344 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0263C32763454FD23F8E4DBF /* Pods_a211HelloAuth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		71BB39B252B2BD65A628C529 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				635944ACAD6ACCCEB68BA5AA /* Pods-a211HelloAuth.debug.xcconfig */,
+				3F6604F9C7BD07CAFC8C92F6 /* Pods-a211HelloAuth.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BB81D7C258D936A0019F1A2 /* Build configuration list for PBXNativeTarget "a211HelloAuth" */;
 			buildPhases = (
+				43161CE863D7D4A66252DFDE /* [CP] Check Pods Manifest.lock */,
 				3BB81D64258D93670019F1A2 /* Sources */,
 				3BB81D65258D93670019F1A2 /* Frameworks */,
 				3BB81D66258D93670019F1A2 /* Resources */,
+				4EFDA3411B3C3788076010F9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,12 +155,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BB81D78258D936A0019F1A2 /* LaunchScreen.storyboard in Resources */,
+				3BB81D81258D94430019F1A2 /* GoogleService-Info.plist in Resources */,
 				3BB81D75258D936A0019F1A2 /* Assets.xcassets in Resources */,
 				3BB81D73258D93670019F1A2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43161CE863D7D4A66252DFDE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-a211HelloAuth-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EFDA3411B3C3788076010F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-a211HelloAuth/Pods-a211HelloAuth-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-a211HelloAuth/Pods-a211HelloAuth-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-a211HelloAuth/Pods-a211HelloAuth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3BB81D64258D93670019F1A2 /* Sources */ = {
@@ -216,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,6 +356,7 @@
 		};
 		3BB81D7D258D936A0019F1A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 635944ACAD6ACCCEB68BA5AA /* Pods-a211HelloAuth.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +376,7 @@
 		};
 		3BB81D7E258D936A0019F1A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F6604F9C7BD07CAFC8C92F6 /* Pods-a211HelloAuth.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
