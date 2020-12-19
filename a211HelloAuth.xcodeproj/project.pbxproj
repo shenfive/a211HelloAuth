@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -91,7 +91,6 @@
 				635944ACAD6ACCCEB68BA5AA /* Pods-a211HelloAuth.debug.xcconfig */,
 				3F6604F9C7BD07CAFC8C92F6 /* Pods-a211HelloAuth.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -107,6 +106,7 @@
 				3BB81D65258D93670019F1A2 /* Frameworks */,
 				3BB81D66258D93670019F1A2 /* Resources */,
 				4EFDA3411B3C3788076010F9 /* [CP] Embed Pods Frameworks */,
+				98758853B06FA143995707C0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,6 +201,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-a211HelloAuth/Pods-a211HelloAuth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98758853B06FA143995707C0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-a211HelloAuth/Pods-a211HelloAuth-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-a211HelloAuth/Pods-a211HelloAuth-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-a211HelloAuth/Pods-a211HelloAuth-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
