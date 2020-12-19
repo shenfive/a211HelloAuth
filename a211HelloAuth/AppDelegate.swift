@@ -25,6 +25,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
       
         
       let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,accessToken: authentication.accessToken)
+        
+        Auth.auth().signIn(with: credential) { (result, error) in
+            print("Google Sign 成功")
+        }
+        
+        
       // ...
     }
 
